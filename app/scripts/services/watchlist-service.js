@@ -45,6 +45,8 @@ angular.module('stockDogApp').service('WatchlistService', function WatchlistServ
     _.remove(Model.watchlists, function (list) {
       return list.id === watchlist.id;
     });
+    
+    saveModel();
   };
   
   // [7] Initializes Model for this singleton service
