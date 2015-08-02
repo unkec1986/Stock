@@ -8,7 +8,8 @@
  *
  * Main module of the application.
  */
-angular.module('stockDogApp', [
+angular
+    .module('stockDogApp', [
     'ngAnimate',
     'ngCookies',
     'ngResource',
@@ -21,13 +22,11 @@ angular.module('stockDogApp', [
         $routeProvider
             .when('/dashboard', {
                 templateUrl: 'views/dashboard.html',
-                controller: 'DashboardCtrl',
-                controllerAs: 'dashboard'
+                controller: 'DashboardCtrl'
             })
             .when('/watchlist/:listId', {
                 templateUrl: 'views/watchlist.html',
-                controller: 'WatchlistCtrl',
-                controllerAs: 'watchlist'
+                controller: 'WatchlistCtrl'
             })
             .otherwise({
                 redirectTo: '/dashboard'
