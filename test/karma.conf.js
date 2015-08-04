@@ -36,6 +36,7 @@ module.exports = function(config) {
       'bower_components/angular-strap/dist/angular-strap.min.js',
       'bower_components/angular-strap/dist/angular-strap.tpl.min.js',
       'bower_components/lodash/dist/lodash.compat.js',
+      'bower_components/angular-google-chart/ng-google-chart.js',
       'bower_components/angular-mocks/angular-mocks.js',
       'bower_components/angular-scenario/angular-scenario.js',
       // endbower
